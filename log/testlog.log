@@ -1,0 +1,337 @@
+2023-10-05 15:37:21,376 - STM_Test -INFO - URL is Working
+2023-10-05 15:37:21,594 - STM_Test -INFO - Email is entered
+2023-10-05 15:37:21,731 - STM_Test -INFO - Password is entered
+2023-10-05 15:41:17,185 - STM_Test -INFO - URL is Working
+2023-10-05 15:41:17,386 - STM_Test -INFO - Email is entered
+2023-10-05 15:41:17,500 - STM_Test -INFO - Password is entered
+2023-10-05 15:47:11,514 - STM_Test -INFO - URL is Working
+2023-10-05 15:47:11,718 - STM_Test -INFO - Email is entered
+2023-10-05 15:47:11,844 - STM_Test -INFO - Password is entered
+2023-10-05 15:47:47,469 - STM_Test -INFO - URL is Working
+2023-10-05 15:47:47,663 - STM_Test -INFO - Email is entered
+2023-10-05 15:47:47,793 - STM_Test -INFO - Password is entered
+2023-10-05 16:20:36,862 - STM_Test -INFO - URL is Working
+2023-10-05 16:20:36,958 - STM_Test -INFO - Email is entered
+2023-10-05 16:20:37,015 - STM_Test -INFO - Password is entered
+2023-10-05 16:21:25,578 - STM_Test -INFO - URL is Working
+2023-10-05 16:21:25,686 - STM_Test -INFO - Email is entered
+2023-10-05 16:21:25,743 - STM_Test -INFO - Password is entered
+2023-10-05 16:21:44,905 - STM_Test -INFO - URL is Working
+2023-10-05 16:21:44,980 - STM_Test -INFO - Email is entered
+2023-10-05 16:21:45,035 - STM_Test -INFO - Password is entered
+2023-10-05 16:23:57,558 - STM_Test -INFO - URL is Working
+2023-10-05 16:23:57,558 - STM_Test -INFO - URL is Working
+2023-10-05 16:23:57,653 - STM_Test -INFO - Email is entered
+2023-10-05 16:23:57,690 - STM_Test -INFO - Email is entered
+2023-10-05 16:23:57,731 - STM_Test -INFO - Password is entered
+2023-10-05 16:23:57,751 - STM_Test -INFO - Password is entered
+2023-10-05 16:26:14,946 - STM_Test -INFO - URL is Working
+2023-10-05 16:26:15,120 - STM_Test -INFO - Email is entered
+2023-10-05 16:26:15,235 - STM_Test -INFO - Password is entered
+2023-10-05 16:26:18,428 - STM_Test -INFO - Login is successfull
+2023-10-05 16:26:26,308 - STM_Test -INFO - URL is Working
+2023-10-05 16:26:26,468 - STM_Test -INFO - Email is entered
+2023-10-05 16:26:26,587 - STM_Test -INFO - Password is entered
+2023-10-05 16:26:29,721 - STM_Test -INFO - Login is successfull
+2023-10-05 16:44:43,826 - STM_Test -INFO - URL is Working
+2023-10-05 16:44:43,925 - STM_Test -INFO - Email is entered
+2023-10-05 16:44:43,983 - STM_Test -INFO - Password is entered
+2023-10-05 16:44:47,085 - STM_Test -INFO - Login is successfull
+2023-10-05 16:55:13,502 - STM_Test -INFO - URL is Working
+2023-10-05 16:55:13,597 - STM_Test -INFO - Email is entered
+2023-10-05 16:55:13,653 - STM_Test -INFO - Password is entered
+2023-10-05 16:55:16,753 - STM_Test -INFO - Login is successfull
+2023-10-05 16:57:35,587 - STM_Test -INFO - URL is Working
+2023-10-05 16:57:35,697 - STM_Test -INFO - Email is entered
+2023-10-05 16:57:35,776 - STM_Test -INFO - Password is entered
+2023-10-05 16:57:38,868 - STM_Test -INFO - Login is successfull
+2023-10-05 17:00:03,848 - STM_Test -INFO - URL is Working
+2023-10-05 17:00:03,949 - STM_Test -INFO - Email is entered
+2023-10-05 17:00:04,018 - STM_Test -INFO - Password is entered
+2023-10-05 17:00:07,119 - STM_Test -INFO - Login is successfull
+2023-10-05 17:01:26,324 - STM_Test -INFO - URL is Working
+2023-10-05 17:01:26,420 - STM_Test -INFO - Email is entered
+2023-10-05 17:01:26,488 - STM_Test -INFO - Password is entered
+2023-10-05 17:01:29,608 - STM_Test -INFO - Login is successfull
+2023-10-05 17:02:45,815 - STM_Test -INFO - URL is Working
+2023-10-05 17:02:45,908 - STM_Test -INFO - Email is entered
+2023-10-05 17:02:45,968 - STM_Test -INFO - Password is entered
+2023-10-05 17:02:49,068 - STM_Test -INFO - Login is successfull
+2023-10-05 17:03:52,674 - STM_Test -INFO - URL is Working
+2023-10-05 17:03:52,784 - STM_Test -INFO - Email is entered
+2023-10-05 17:03:52,859 - STM_Test -INFO - Password is entered
+2023-10-05 17:03:55,956 - STM_Test -INFO - Login is successfull
+2023-10-05 17:04:56,290 - STM_Test -INFO - URL is Working
+2023-10-05 17:04:56,466 - STM_Test -INFO - Email is entered
+2023-10-05 17:04:56,586 - STM_Test -INFO - Password is entered
+2023-10-05 17:04:59,769 - STM_Test -INFO - Login is successfull
+2023-10-05 17:05:19,284 - STM_Test -INFO - URL is Working
+2023-10-05 17:05:19,527 - STM_Test -INFO - Email is entered
+2023-10-05 17:05:19,644 - STM_Test -INFO - Password is entered
+2023-10-05 17:05:22,797 - STM_Test -INFO - Login is successfull
+2023-10-05 17:05:37,132 - STM_Test -INFO - URL is Working
+2023-10-05 17:05:37,427 - STM_Test -INFO - Email is entered
+2023-10-05 17:05:37,591 - STM_Test -INFO - Password is entered
+2023-10-05 17:05:40,752 - STM_Test -INFO - Login is successfull
+2023-10-05 17:07:28,608 - STM_Test -INFO - URL is Working
+2023-10-05 17:07:28,821 - STM_Test -INFO - Email is entered
+2023-10-05 17:07:28,923 - STM_Test -INFO - Password is entered
+2023-10-05 17:07:32,123 - STM_Test -INFO - Login is successfull
+2023-10-05 17:08:19,365 - STM_Test -INFO - URL is Working
+2023-10-05 17:08:19,599 - STM_Test -INFO - Email is entered
+2023-10-05 17:08:19,704 - STM_Test -INFO - Password is entered
+2023-10-05 17:08:22,889 - STM_Test -INFO - Login is successfull
+2023-10-05 17:08:57,148 - STM_Test -INFO - URL is Working
+2023-10-05 17:08:57,420 - STM_Test -INFO - Email is entered
+2023-10-05 17:08:57,573 - STM_Test -INFO - Password is entered
+2023-10-05 17:09:00,792 - STM_Test -INFO - Login is successfull
+2023-10-05 17:09:59,769 - STM_Test -INFO - URL is Working
+2023-10-05 17:10:00,035 - STM_Test -INFO - Email is entered
+2023-10-05 17:10:00,175 - STM_Test -INFO - Password is entered
+2023-10-05 17:10:03,353 - STM_Test -INFO - Login is successfull
+2023-10-05 17:12:57,401 - STM_Test -INFO - URL is Working
+2023-10-05 17:12:57,613 - STM_Test -INFO - Email is entered
+2023-10-05 17:12:57,812 - STM_Test -INFO - Password is entered
+2023-10-05 17:13:00,969 - STM_Test -INFO - Login is successfull
+2023-10-05 17:14:40,616 - STM_Test -INFO - URL is Working
+2023-10-05 17:14:40,801 - STM_Test -INFO - Email is entered
+2023-10-05 17:14:40,936 - STM_Test -INFO - Password is entered
+2023-10-05 17:14:44,136 - STM_Test -INFO - Login is successfull
+2023-10-05 17:15:15,357 - STM_Test -INFO - URL is Working
+2023-10-05 17:15:15,553 - STM_Test -INFO - Email is entered
+2023-10-05 17:15:15,692 - STM_Test -INFO - Password is entered
+2023-10-05 17:15:18,893 - STM_Test -INFO - Login is successfull
+2023-10-05 17:16:06,832 - STM_Test -INFO - URL is Working
+2023-10-05 17:16:07,046 - STM_Test -INFO - Email is entered
+2023-10-05 17:16:07,196 - STM_Test -INFO - Password is entered
+2023-10-05 17:16:10,442 - STM_Test -INFO - Login is successfull
+2023-10-05 17:24:09,874 - STM_Test -INFO - URL is Working
+2023-10-05 17:24:10,145 - STM_Test -INFO - Email is entered
+2023-10-05 17:24:10,256 - STM_Test -INFO - Password is entered
+2023-10-05 17:24:13,462 - STM_Test -INFO - Login is successfull
+2023-10-05 17:25:01,996 - STM_Test -INFO - URL is Working
+2023-10-05 17:25:02,196 - STM_Test -INFO - Email is entered
+2023-10-05 17:25:02,343 - STM_Test -INFO - Password is entered
+2023-10-05 17:25:05,553 - STM_Test -INFO - Login is successfull
+2023-10-05 17:29:39,573 - STM_Test -INFO - URL is Working
+2023-10-05 17:29:39,770 - STM_Test -INFO - Email is entered
+2023-10-05 17:29:39,936 - STM_Test -INFO - Password is entered
+2023-10-05 17:29:43,123 - STM_Test -INFO - Login is successfull
+2023-10-05 17:31:13,482 - STM_Test -INFO - URL is Working
+2023-10-05 17:31:13,671 - STM_Test -INFO - Email is entered
+2023-10-05 17:31:13,835 - STM_Test -INFO - Password is entered
+2023-10-05 17:31:17,030 - STM_Test -INFO - Login is successfull
+2023-10-05 17:31:50,525 - STM_Test -INFO - URL is Working
+2023-10-05 17:31:50,779 - STM_Test -INFO - Email is entered
+2023-10-05 17:31:50,904 - STM_Test -INFO - Password is entered
+2023-10-05 17:31:54,076 - STM_Test -INFO - Login is successfull
+2023-10-06 09:41:45,234 - STM_Test -INFO - URL is Working
+2023-10-06 09:41:45,357 - STM_Test -INFO - Email is entered
+2023-10-06 09:41:45,415 - STM_Test -INFO - Password is entered
+2023-10-06 09:44:33,151 - STM_Test -INFO - URL is Working
+2023-10-06 09:44:33,263 - STM_Test -INFO - Email is entered
+2023-10-06 09:44:33,322 - STM_Test -INFO - Password is entered
+2023-10-06 09:44:36,441 - STM_Test -INFO - URL is Working
+2023-10-06 10:01:53,286 - STM_Test -INFO - URL is Working
+2023-10-06 10:01:53,409 - STM_Test -INFO - Email is entered
+2023-10-06 10:01:53,465 - STM_Test -INFO - Password is entered
+2023-10-06 10:01:56,602 - STM_Test -INFO - URL is Working
+2023-10-06 10:04:19,259 - STM_Test -INFO - URL is Working
+2023-10-06 10:04:19,352 - STM_Test -INFO - Email is entered
+2023-10-06 10:04:19,406 - STM_Test -INFO - Password is entered
+2023-10-06 10:04:21,538 - STM_Test -INFO - Login is successful
+2023-10-06 10:04:31,600 - STM_Test -INFO - URL is Working
+2023-10-06 10:05:04,108 - STM_Test -INFO - URL is Working
+2023-10-06 10:05:04,215 - STM_Test -INFO - Email is entered
+2023-10-06 10:05:04,270 - STM_Test -INFO - Password is entered
+2023-10-06 10:05:06,386 - STM_Test -INFO - Login is successful
+2023-10-06 10:05:06,437 - STM_Test -INFO - URL is Working
+2023-10-06 10:05:06,488 - STM_Test -INFO - Email is entered
+2023-10-06 10:05:06,536 - STM_Test -INFO - Password is entered
+2023-10-06 10:06:49,399 - STM_Test -INFO - URL is Working
+2023-10-06 10:06:49,502 - STM_Test -INFO - Email is entered
+2023-10-06 10:06:49,551 - STM_Test -INFO - Password is entered
+2023-10-06 10:06:51,658 - STM_Test -INFO - Login is successful
+2023-10-06 10:06:54,714 - STM_Test -INFO - URL is Working
+2023-10-06 10:06:54,777 - STM_Test -INFO - Email is entered
+2023-10-06 10:06:54,825 - STM_Test -INFO - Password is entered
+2023-10-06 10:15:05,622 - STM_Test -INFO - URL is Working
+2023-10-06 10:15:05,957 - STM_Test -INFO - Email is entered
+2023-10-06 10:15:06,127 - STM_Test -INFO - Password is entered
+2023-10-06 10:15:08,272 - STM_Test -INFO - Login is successful
+2023-10-06 10:15:11,411 - STM_Test -INFO - URL is Working
+2023-10-06 10:15:11,525 - STM_Test -INFO - Email is entered
+2023-10-06 10:15:11,615 - STM_Test -INFO - Password is entered
+2023-10-06 10:27:03,562 - STM_Test -INFO - URL is Working
+2023-10-06 10:27:03,669 - STM_Test -INFO - Email is entered
+2023-10-06 10:27:03,722 - STM_Test -INFO - Password is entered
+2023-10-06 10:27:05,819 - STM_Test -INFO - Login is successful
+2023-10-06 10:27:19,228 - STM_Test -INFO - URL is Working
+2023-10-06 10:27:19,307 - STM_Test -INFO - Email is entered
+2023-10-06 10:27:19,351 - STM_Test -INFO - Password is entered
+2023-10-06 10:28:51,146 - STM_Test -INFO - URL is Working
+2023-10-06 10:28:51,240 - STM_Test -INFO - Email is entered
+2023-10-06 10:28:51,293 - STM_Test -INFO - Password is entered
+2023-10-06 10:29:01,322 - STM_Test -INFO - URL is Working
+2023-10-06 10:29:01,388 - STM_Test -INFO - Email is entered
+2023-10-06 10:29:01,428 - STM_Test -INFO - Password is entered
+2023-10-06 10:38:54,675 - STM_Test -INFO - Signup is successful
+2023-10-06 10:38:54,686 - STM_Test -INFO - URL is Working
+2023-10-06 10:38:54,752 - STM_Test -INFO - Email is entered
+2023-10-06 10:38:54,797 - STM_Test -INFO - Password is entered
+2023-10-06 10:38:56,869 - STM_Test -INFO - Login is successful
+2023-10-06 10:38:59,912 - STM_Test -INFO - URL is Working
+2023-10-06 10:38:59,980 - STM_Test -INFO - Email is entered
+2023-10-06 10:39:00,018 - STM_Test -INFO - Password is entered
+2023-10-06 10:42:51,543 - STM_Test -INFO - Signup is successful
+2023-10-06 10:42:51,551 - STM_Test -INFO - URL is Working
+2023-10-06 10:42:51,624 - STM_Test -INFO - Email is entered
+2023-10-06 10:42:51,677 - STM_Test -INFO - Password is entered
+2023-10-06 10:42:53,761 - STM_Test -INFO - Login is successful
+2023-10-06 10:42:56,813 - STM_Test -INFO - URL is Working
+2023-10-06 10:42:56,875 - STM_Test -INFO - Email is entered
+2023-10-06 10:42:56,914 - STM_Test -INFO - Password is entered
+2023-10-06 11:09:06,521 - STM_Test -INFO - Signup is successful
+2023-10-06 11:09:06,547 - STM_Test -INFO - URL is Working
+2023-10-06 11:09:06,709 - STM_Test -INFO - Email is entered
+2023-10-06 11:09:06,814 - STM_Test -INFO - Password is entered
+2023-10-06 11:09:08,958 - STM_Test -INFO - Login is successful
+2023-10-06 11:09:12,056 - STM_Test -INFO - URL is Working
+2023-10-06 11:09:12,159 - STM_Test -INFO - Email is entered
+2023-10-06 11:09:12,261 - STM_Test -INFO - Password is entered
+2023-10-06 11:23:23,368 - STM_Test -INFO - URL is Working
+2023-10-06 11:23:23,577 - STM_Test -INFO - Email is entered
+2023-10-06 11:23:23,660 - STM_Test -INFO - Password is entered
+2023-10-06 11:23:25,801 - STM_Test -INFO - Login is successful
+2023-10-06 11:23:28,899 - STM_Test -INFO - URL is Working
+2023-10-06 11:23:29,030 - STM_Test -INFO - Email is entered
+2023-10-06 11:23:29,163 - STM_Test -INFO - Password is entered
+2023-10-06 11:56:22,048 - STM_Test -INFO - URL is Working
+2023-10-06 11:56:22,235 - STM_Test -INFO - Wrong Email is entered
+2023-10-06 11:56:22,370 - STM_Test -INFO - Password is entered
+2023-10-06 12:04:12,786 - STM_Test -INFO - URL is Working
+2023-10-06 12:04:12,967 - STM_Test -INFO - Wrong Email is entered
+2023-10-06 12:04:13,100 - STM_Test -INFO - Password is entered
+2023-10-06 12:04:16,270 - STM_Test -INFO - Login is unsuccessful with wrong credentials
+2023-10-06 12:07:21,234 - STM_Test -INFO - URL is Working
+2023-10-06 12:07:21,429 - STM_Test -INFO - Wrong Email is entered
+2023-10-06 12:07:21,583 - STM_Test -INFO - Password is entered
+2023-10-06 12:07:24,788 - STM_Test -INFO - Login is unsuccessful with wrong credentials
+2023-10-06 14:11:23,865 - STM_Test -INFO - URL is Working
+2023-10-06 14:11:23,979 - STM_Test -INFO - Wrong Email is entered
+2023-10-06 14:11:24,033 - STM_Test -INFO - Password is entered
+2023-10-06 14:11:27,149 - STM_Test -INFO - Login is unsuccessful with wrong credentials
+2023-10-06 14:12:03,454 - STM_Test -INFO - URL is Working
+2023-10-06 14:12:03,558 - STM_Test -INFO - Wrong Email is entered
+2023-10-06 14:12:03,610 - STM_Test -INFO - Password is entered
+2023-10-06 14:12:06,719 - STM_Test -INFO - Login is unsuccessful with wrong credentials
+2023-10-06 14:24:11,294 - STM_Test -INFO - Correct Email is entered
+2023-10-06 14:24:11,346 - STM_Test -INFO - Password is entered
+2023-10-06 14:24:14,444 - STM_Test -INFO - Login is unsuccessful with wrong credentials
+2023-10-06 14:24:16,623 - STM_Test -INFO - Wrong Email is entered
+2023-10-06 14:24:16,665 - STM_Test -INFO - Correct Password is entered
+2023-10-06 14:24:19,741 - STM_Test -INFO - Login is unsuccessful with wrong credentials
+2023-10-06 14:24:22,881 - STM_Test -INFO - Credentials with other email-id(except ceinsys.com & meg-nxt.com) is entered
+2023-10-06 14:24:22,932 - STM_Test -INFO - Correct Password is entered
+2023-10-06 14:24:26,020 - STM_Test -INFO - Login is unsuccessful with other email-id
+2023-10-06 14:24:29,106 - STM_Test -INFO - URL is Working
+2023-10-06 14:24:29,183 - STM_Test -INFO - Correct Email is entered
+2023-10-06 14:24:29,225 - STM_Test -INFO - Correct Password is entered
+2023-10-06 14:24:31,309 - STM_Test -INFO - Login is successful
+2023-10-06 14:35:59,983 - STM_Test -INFO - Correct Email is entered
+2023-10-06 14:36:00,038 - STM_Test -INFO - Password is entered
+2023-10-06 14:36:03,192 - STM_Test -INFO - Login is unsuccessful with wrong credentials
+2023-10-06 14:36:05,380 - STM_Test -INFO - Wrong Email is entered
+2023-10-06 14:36:05,424 - STM_Test -INFO - Correct Password is entered
+2023-10-06 14:36:08,539 - STM_Test -INFO - Login is unsuccessful with wrong credentials
+2023-10-06 14:36:11,688 - STM_Test -INFO - Credentials with other email-id(except ceinsys.com & meg-nxt.com) is entered
+2023-10-06 14:36:11,731 - STM_Test -INFO - Correct Password is entered
+2023-10-06 14:36:14,834 - STM_Test -INFO - Login is unsuccessful with other email-id
+2023-10-06 14:36:17,935 - STM_Test -INFO - URL is Working
+2023-10-06 14:36:18,013 - STM_Test -INFO - Correct Email is entered
+2023-10-06 14:36:18,058 - STM_Test -INFO - Correct Password is entered
+2023-10-06 14:36:20,178 - STM_Test -INFO - Login is successful
+2023-10-06 14:39:00,779 - STM_Test -INFO - Correct Email is entered
+2023-10-06 14:39:00,826 - STM_Test -INFO - Password is entered
+2023-10-06 14:39:06,007 - STM_Test -INFO - Login is unsuccessful with wrong credentials
+2023-10-06 14:39:08,215 - STM_Test -INFO - Wrong Email is entered
+2023-10-06 14:39:08,258 - STM_Test -INFO - Correct Password is entered
+2023-10-06 14:39:13,337 - STM_Test -INFO - Login is unsuccessful with wrong credentials
+2023-10-06 14:39:16,499 - STM_Test -INFO - Credentials with other email-id(except ceinsys.com & meg-nxt.com) is entered
+2023-10-06 14:39:16,538 - STM_Test -INFO - Correct Password is entered
+2023-10-06 14:39:21,643 - STM_Test -INFO - Login is unsuccessful with other email-id
+2023-10-06 14:39:24,730 - STM_Test -INFO - URL is Working
+2023-10-06 14:39:24,816 - STM_Test -INFO - Correct Email is entered
+2023-10-06 14:39:24,862 - STM_Test -INFO - Correct Password is entered
+2023-10-06 14:39:29,981 - STM_Test -INFO - Login is successful
+2023-10-06 14:43:06,343 - STM_Test -INFO - Correct Email is entered
+2023-10-06 14:43:06,390 - STM_Test -INFO - Correct Password is entered
+2023-10-06 14:43:11,530 - STM_Test -INFO - Login is successful
+2023-10-06 14:43:47,745 - STM_Test -INFO - Correct Email is entered
+2023-10-06 14:43:47,792 - STM_Test -INFO - Correct Password is entered
+2023-10-06 14:43:52,918 - STM_Test -INFO - Login is successful
+2023-10-06 14:45:05,767 - STM_Test -INFO - URL is Working
+2023-10-06 14:45:05,864 - STM_Test -INFO - Correct Email is entered
+2023-10-06 14:45:05,909 - STM_Test -INFO - Wrong password is entered
+2023-10-06 14:45:11,082 - STM_Test -INFO - Login is unsuccessful with wrong credentials
+2023-10-06 14:45:13,246 - STM_Test -INFO - Wrong Email is entered
+2023-10-06 14:45:13,303 - STM_Test -INFO - Correct Password is entered
+2023-10-06 14:45:18,369 - STM_Test -INFO - Login is unsuccessful with wrong credentials
+2023-10-06 14:45:21,533 - STM_Test -INFO - Credentials with other email-id(except ceinsys.com & meg-nxt.com) is entered
+2023-10-06 14:45:21,574 - STM_Test -INFO - Correct Password is entered
+2023-10-06 14:45:26,679 - STM_Test -INFO - Login is unsuccessful with other email-id
+2023-10-06 14:45:29,847 - STM_Test -INFO - Correct Email is entered
+2023-10-06 14:45:29,891 - STM_Test -INFO - Correct Password is entered
+2023-10-06 14:45:35,012 - STM_Test -INFO - Login is successful
+2023-10-06 14:51:38,674 - STM_Test -INFO - URL is Working
+2023-10-06 14:51:38,852 - STM_Test -INFO - Correct Email is entered
+2023-10-06 14:51:38,975 - STM_Test -INFO - Wrong password is entered
+2023-10-06 14:51:44,235 - STM_Test -INFO - Login is unsuccessful with wrong credentials
+2023-10-06 14:51:46,655 - STM_Test -INFO - Wrong Email is entered
+2023-10-06 14:51:46,807 - STM_Test -INFO - Correct Password is entered
+2023-10-06 14:51:51,934 - STM_Test -INFO - Login is unsuccessful with wrong credentials
+2023-10-06 14:51:55,310 - STM_Test -INFO - Credentials with other email-id(except ceinsys.com & meg-nxt.com) is entered
+2023-10-06 14:51:55,413 - STM_Test -INFO - Correct Password is entered
+2023-10-06 14:52:00,530 - STM_Test -INFO - Login is unsuccessful with other email-id
+2023-10-06 14:52:03,894 - STM_Test -INFO - Correct Email is entered
+2023-10-06 14:52:04,047 - STM_Test -INFO - Correct Password is entered
+2023-10-06 14:52:09,172 - STM_Test -INFO - Login is successful
+2023-10-06 16:57:05,436 - STM_Test -INFO - Signup unsuccessful due to invalid format of email
+2023-10-06 17:02:09,317 - STM_Test -INFO - Signup unsuccessful due to invalid format of email
+2023-10-09 12:07:06,941 - STM_Test -INFO - Signup unsuccessful due to invalid format of Name
+2023-10-09 14:36:55,564 - STM_Test -INFO - Signup unsuccessful due to invalid format of First Name
+2023-10-09 14:37:00,033 - STM_Test -INFO - Signup unsuccessful due to invalid format of Last Name
+2023-10-09 14:37:04,414 - STM_Test -INFO - Signup unsuccessful due to invalid format of email
+2023-10-09 14:37:08,414 - STM_Test -INFO - Signup unsuccessful as password & confirm password don't match
+2023-10-09 14:58:01,515 - STM_Test -INFO - Signup unsuccessful due to invalid format of First Name
+2023-10-09 14:58:05,942 - STM_Test -INFO - Signup unsuccessful due to invalid format of Last Name
+2023-10-09 14:58:10,378 - STM_Test -INFO - Signup unsuccessful due to invalid format of email
+2023-10-09 14:58:14,662 - STM_Test -INFO - Signup unsuccessful as password & confirm password don't match
+2023-10-09 14:58:18,984 - STM_Test -INFO - Signup successful without lastname
+2023-10-09 15:09:49,326 - STM_Test -INFO - Signup unsuccessful due to invalid format of First Name
+2023-10-09 15:09:53,765 - STM_Test -INFO - Signup unsuccessful due to invalid format of Last Name
+2023-10-09 15:09:58,215 - STM_Test -INFO - Signup unsuccessful due to invalid format of email
+2023-10-09 15:10:02,466 - STM_Test -INFO - Signup unsuccessful as email-id doesn't match meg-nxt.com or ceinsys.com
+2023-10-09 15:10:06,899 - STM_Test -INFO - Signup unsuccessful as password & confirm password don't match
+2023-10-09 15:10:10,987 - STM_Test -INFO - Signup successful without lastname
+2023-10-09 15:10:14,944 - STM_Test -INFO - Signup successful
+2023-10-09 17:27:48,985 - STM_Test -INFO - Signup unsuccessful due to invalid format of First Name
+2023-10-09 17:27:53,470 - STM_Test -INFO - Signup unsuccessful due to invalid format of Last Name
+2023-10-09 17:27:57,760 - STM_Test -INFO - Signup unsuccessful due to invalid format of email
+2023-10-09 17:28:01,985 - STM_Test -INFO - Signup unsuccessful as email-id doesn't match meg-nxt.com or ceinsys.com
+2023-10-09 17:28:06,320 - STM_Test -INFO - Signup unsuccessful as password & confirm password don't match
+2023-10-09 17:28:12,847 - STM_Test -INFO - Signup successful without lastname
+2023-10-09 17:28:16,713 - STM_Test -INFO - Signup successful
+2023-10-09 17:28:16,718 - STM_Test -INFO - URL is Working
+2023-10-09 17:28:16,889 - STM_Test -INFO - Correct Email is entered
+2023-10-09 17:28:17,004 - STM_Test -INFO - Wrong password is entered
+2023-10-09 17:28:22,230 - STM_Test -INFO - Login is unsuccessful with wrong credentials
+2023-10-09 17:28:24,614 - STM_Test -INFO - Wrong Email is entered
+2023-10-09 17:28:24,780 - STM_Test -INFO - Correct Password is entered
+2023-10-09 17:28:29,903 - STM_Test -INFO - Login is unsuccessful with wrong credentials
+2023-10-09 17:28:33,293 - STM_Test -INFO - Credentials with other email-id(except ceinsys.com & meg-nxt.com) is entered
+2023-10-09 17:28:33,429 - STM_Test -INFO - Correct Password is entered
+2023-10-09 17:28:38,557 - STM_Test -INFO - Login is unsuccessful with other email-id
+2023-10-09 17:28:41,997 - STM_Test -INFO - Correct Email is entered
+2023-10-09 17:28:42,143 - STM_Test -INFO - Correct Password is entered
+2023-10-09 17:28:47,276 - STM_Test -INFO - Login is successful
