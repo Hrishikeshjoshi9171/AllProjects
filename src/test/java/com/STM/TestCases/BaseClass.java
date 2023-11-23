@@ -61,13 +61,13 @@ public class BaseClass {
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS);
 		
-		Robot robot = new Robot();
-		for(int i=0;i<2;i++) {
-			robot.keyPress(KeyEvent.VK_CONTROL);
-			robot.keyPress(KeyEvent.VK_SUBTRACT);
-			robot.keyRelease(KeyEvent.VK_SUBTRACT);
-			robot.keyRelease(KeyEvent.VK_CONTROL);
-		}
+//		Robot robot = new Robot();
+//		for(int i=0;i<2;i++) {
+//			robot.keyPress(KeyEvent.VK_CONTROL);
+//			robot.keyPress(KeyEvent.VK_SUBTRACT);
+//			robot.keyRelease(KeyEvent.VK_SUBTRACT);
+//			robot.keyRelease(KeyEvent.VK_CONTROL);
+//		}
 		Thread.sleep(3000);
 		
 		
