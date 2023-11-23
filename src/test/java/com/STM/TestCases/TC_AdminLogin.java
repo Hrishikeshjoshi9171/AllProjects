@@ -3,6 +3,7 @@ package com.STM.TestCases;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.Color;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -31,7 +32,7 @@ public class TC_AdminLogin extends BaseClass {
 		driver.findElement(By.id("signup")).click();     // Clicking on the sign up button to Sign Up
 		Thread.sleep(3000);
 
-		WebElement signup = driver.findElement(By.xpath("//p[text()='Create an account to continue.']")); //Storing path 
+		WebElement signup = driver.findElement(By.xpath("//p[text()='must contain only alphabets']")); //Storing path 
 		                                                                                                  //of output Data
 		
 		if (signup.isDisplayed()) {
@@ -69,7 +70,7 @@ public class TC_AdminLogin extends BaseClass {
 		driver.findElement(By.id("signup")).click();
 		Thread.sleep(3000);
 
-		WebElement signup = driver.findElement(By.xpath("//p[text()='Create an account to continue.']"));
+		WebElement signup = driver.findElement(By.xpath("//div[text()='Opps! Signup failed']"));
 		if (signup.isDisplayed()) {
 			Assert.assertTrue(true);
 			logger.info("Signup unsuccessful due to invalid format of Last Name");
@@ -154,11 +155,11 @@ public class TC_AdminLogin extends BaseClass {
 		WebElement password = driver.findElement(By.name("password"));
 		WebElement confirmpassword = driver.findElement(By.name("confirmPassword"));
 
-		firstname.sendKeys(Keys.CONTROL, "a", Keys.DELETE);
-		lastname.sendKeys(Keys.CONTROL, "a", Keys.DELETE);
-		email.sendKeys(Keys.CONTROL, "a", Keys.DELETE);
-		password.sendKeys(Keys.CONTROL, "a", Keys.DELETE);
-		confirmpassword.sendKeys(Keys.CONTROL, "a", Keys.DELETE);
+//		firstname.sendKeys(Keys.CONTROL, "a", Keys.DELETE);
+//		lastname.sendKeys(Keys.CONTROL, "a", Keys.DELETE);
+//		email.sendKeys(Keys.CONTROL, "a", Keys.DELETE);
+//		password.sendKeys(Keys.CONTROL, "a", Keys.DELETE);
+//		confirmpassword.sendKeys(Keys.CONTROL, "a", Keys.DELETE);
 
 		firstname.sendKeys("Robert");
 		lastname.sendKeys("Downey");
@@ -168,11 +169,19 @@ public class TC_AdminLogin extends BaseClass {
 		driver.findElement(By.id("signup")).click();
 		Thread.sleep(3000);
 
-		WebElement signup = driver.findElement(By.xpath("//p[text()='Create an account to continue.']"));
-		if (signup.isDisplayed()) {
+		WebElement signup = driver.findElement(By.xpath("//label[text()='Confirm Password']"));
+		String rgba=signup.getCssValue("color");
+//		String hex=Color.fromString(rgba).asHex();
+//		System.out.println("Colour is: " + rgba); //rgba(239, 68, 68, 1)
+//		System.out.println("Hex code for the colour is: "+ hex); //#ef4444
+		String expectedcolor="rgba(239, 68, 68, 1)";
+		if(rgba.equals(expectedcolor))
+		{
 			Assert.assertTrue(true);
 			logger.info("Signup unsuccessful as password & confirm password don't match");
-		} else {
+		} 
+		else
+		{
 			Assert.assertTrue(false);
 			logger.info("Signup is successful even with password unmatch");
 		}
@@ -224,11 +233,11 @@ public class TC_AdminLogin extends BaseClass {
 		WebElement password = driver.findElement(By.name("password"));
 		WebElement confirmpassword = driver.findElement(By.name("confirmPassword"));
 
-		firstname.sendKeys("John");
-		lastname.sendKeys("Wick");
-		email.sendKeys("john@ceinsys.com");
-		password.sendKeys("john@123");
-		confirmpassword.sendKeys("john@123");
+		firstname.sendKeys("Pranav");
+		lastname.sendKeys("Asthana");
+		email.sendKeys("pranav@ceinsys.com");
+		password.sendKeys("Pranav@123");
+		confirmpassword.sendKeys("Pranav@123");
 		driver.findElement(By.id("signup")).click();
 		Thread.sleep(3000);
 
@@ -333,8 +342,25 @@ public class TC_AdminLogin extends BaseClass {
 		pass.sendKeys(Keys.CONTROL, "a", Keys.DELETE);
 		Thread.sleep(3000);
 	}
+	
+	@Test(priority=11)
+	public void UnapprovedLogin() throws InterruptedException{ //Login with recently signup user which is not approved by Admin
+		driver.findElement(By.name("email")).sendKeys("pranav@ceinsys.com");
+		driver.findElement(By.name("password")).sendKeys("Pranav@123");
+		driver.findElement(By.id("login")).click();
+		Thread.sleep(3000);		
+		WebElement login=driver.findElement(By.xpath("//div[text()='Your account is not activated yet.Please contact admin.']"));
+		if(login.isDisplayed()) {
+			Assert.assertTrue(true);
+			logger.info("Login is unsuccessful with unapproved User");
+		}
+		else {
+			Assert.assertTrue(false);
+			logger.info("Login is successful with unapproved user");
+		}
+	}
 
-	@Test(priority = 11)
+	@Test(priority = 12)
 	public void CorrectLogin() throws InterruptedException { // Login with correct input
 
 		LoginPage LP = new LoginPage(driver);

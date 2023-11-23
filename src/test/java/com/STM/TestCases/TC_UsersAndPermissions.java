@@ -1,7 +1,13 @@
 package com.STM.TestCases;
 
-public class TC_UsersAndPermissions extends BaseClass{
-  @Test(priority=1)
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import org.testng.Assert;
+import org.testng.annotations.Test;
+
+public class TC_UsersAndPermissions extends BaseClass {
+	
+	@Test(priority=1)
 	public void UsersandPermissions() throws InterruptedException{
 		
 		driver.findElement(By.name("email")).sendKeys("admin@ceinsys.com");
@@ -78,8 +84,11 @@ public class TC_UsersAndPermissions extends BaseClass{
 	@Test(priority=4)
 	public void AcceptButton() throws InterruptedException{
 		
-		driver.findElement(By.xpath("//button[text()='Approve']")).click();		
+		driver.findElement(By.xpath("//button[text()='Approve']")).click();
+		driver.findElement(By.xpath("//a[text()='Active']")).click();
+		
 		WebElement name=driver.findElement(By.xpath("//div[text()='Pranav approved successfully']"));
+		
 		if(name.isDisplayed()) {
 			Assert.assertTrue(true);
 			logger.info("The user is approved");
@@ -88,5 +97,10 @@ public class TC_UsersAndPermissions extends BaseClass{
 			Assert.assertTrue(true);
 			logger.info("The user is not approved");
 		}
+	}
+	
+	@Test(priority=5)
+	public void Activesection() throws InterruptedException{
+		
 	}
 }
