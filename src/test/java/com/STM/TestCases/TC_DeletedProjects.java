@@ -10,16 +10,16 @@ public class TC_DeletedProjects extends BaseClass{
 	@Test
 	public void deletedprojects() throws InterruptedException{
 		
-		driver.findElement(By.name("email")).sendKeys("admin@ceinsys.com");
-		driver.findElement(By.name("password")).sendKeys("Admin@123");
-		driver.findElement(By.id("login")).click();
+//		driver.findElement(By.name("email")).sendKeys("admin@ceinsys.com");
+//		driver.findElement(By.name("password")).sendKeys("Admin@123");
+//		driver.findElement(By.id("login")).click();
+//		Thread.sleep(2000);
+		
+		driver.findElement(By.id("deletedProjectsTab")).click();
+		driver.findElement(By.xpath("//button[text()='Restore']")).click();
 		Thread.sleep(2000);
 		
-		driver.findElement(By.xpath("//a[text()='Deleted Projects']")).click();
-		driver.findElement(By.xpath("(//button[text()='Restore'])[4]")).click();
-		Thread.sleep(2000);
-		
-		WebElement restoremessage=driver.findElement(By.xpath("//div[text()='Project Test2 Restored']"));
+		WebElement restoremessage=driver.findElement(By.xpath("//div[text()='Project Hrishikesh Testing Restored']"));
 		
 		if(restoremessage.isDisplayed()) {
 			Assert.assertTrue(true);
@@ -32,8 +32,10 @@ public class TC_DeletedProjects extends BaseClass{
 		
 		Thread.sleep(2000);
 		
-		driver.findElement(By.xpath("//a[text()='All Projects']")).click();
-		WebElement projdisplay=driver.findElement(By.xpath("//p[text()='Test2']"));
+		driver.findElement(By.id("allProjectsTab")).click();
+		
+		WebElement projdisplay=driver.findElement(By.xpath("//p[text()='Hrishikesh Testing']"));
+		
 		if(projdisplay.isDisplayed())
 		{
 			Assert.assertTrue(true);

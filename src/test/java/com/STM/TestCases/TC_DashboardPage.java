@@ -16,34 +16,35 @@ public class TC_DashboardPage extends BaseClass{
 //		driver.findElement(By.id("login")).click();
 //		Thread.sleep(3000);
 		
-		WebElement myprojects=driver.findElement(By.id("myProjects"));
 		WebElement userpermissions=driver.findElement(By.id("userManagement"));
-		userpermissions.click();
-		Thread.sleep(2000);
+//		userpermissions.click();
+//		Thread.sleep(2000);
 		WebElement usergroups=driver.findElement(By.id("userGroup"));
-		usergroups.click();
-		Thread.sleep(2000);
+//		usergroups.click();
+//		Thread.sleep(2000);
 		WebElement publiclayers=driver.findElement(By.id("publicLayers"));
-		publiclayers.click();
-		Thread.sleep(2000);
-		myprojects.click();
-		Thread.sleep(2000);
-		WebElement projectname=driver.findElement(By.xpath("//p[text()='Louisa County ']"));
-		WebElement allprojects=driver.findElement(By.xpath("//a[text()='All Projects']"));
-		WebElement deletedprojects=driver.findElement(By.xpath("//a[text()='Deleted Projects']"));
-		deletedprojects.click();
-		Thread.sleep(2000);
-		myprojects.click();
-		Thread.sleep(2000);
-//		WebElement mapview=driver.findElement(By.id("radix-:r58:-trigger-Map")); mapview.isDisplayed() &&
-//		WebElement listview=driver.findElement(By.id("radix-:r58:-trigger-List"));  listview.isDisplayed() &&
-		WebElement createproject=driver.findElement(By.xpath("//p[text()='Create Project ']"));
+//		publiclayers.click();
+//		Thread.sleep(2000);
+		WebElement myprojects=driver.findElement(By.id("myProjects"));
+//		myprojects.click();
+//		Thread.sleep(2000);
+		WebElement deletedprojects=driver.findElement(By.id("deletedProjectsTab"));
+//		deletedprojects.click();
+//		Thread.sleep(2000);
+//		myprojects.click();
+//		Thread.sleep(3000);
+		
+		WebElement projectname=driver.findElement(By.xpath("//p[text()='Hrishikesh Testing']"));
+		WebElement allprojects=driver.findElement(By.id("allProjectsTab"));
+		WebElement mapview=driver.findElement(By.id("mapView"));
+		WebElement listview=driver.findElement(By.id("listView"));
+		WebElement createproject=driver.findElement(By.id("createProjects"));
 		WebElement darkmode=driver.findElement(By.id("themeToggler"));
 		WebElement logout=driver.findElement(By.id("logout"));
 		
-		if(myprojects.isDisplayed() && userpermissions.isDisplayed() && usergroups.isDisplayed() && publiclayers.isDisplayed() && projectname.isDisplayed() 
-				&& allprojects.isDisplayed() && deletedprojects.isDisplayed() && createproject.isDisplayed()
-				&& darkmode.isDisplayed() && logout.isDisplayed())
+		if(myprojects.isDisplayed() && userpermissions.isDisplayed() && usergroups.isDisplayed() && publiclayers.isDisplayed()
+				&& projectname.isDisplayed() && allprojects.isDisplayed() && deletedprojects.isDisplayed() && createproject.isDisplayed()
+				&& mapview.isDisplayed() && listview.isDisplayed() && darkmode.isDisplayed() && logout.isDisplayed())
 		{
 			Assert.assertTrue(true);
 			logger.info("All the sections are present on the Dashboard");
@@ -59,12 +60,13 @@ public class TC_DashboardPage extends BaseClass{
 		
 		driver.findElement(By.id("themeToggler")).click();
 		Thread.sleep(3000);
-		WebElement colour=driver.findElement(By.xpath("//p[text()='Hrishikesh Testing ']"));
+		WebElement colour=driver.findElement(By.xpath("//p[text()='Hrishikesh Testing']"));
 		String rgba=colour.getCssValue("color");
 //		String hex=Color.fromString(rgba).asHex();
 //		System.out.println("Colour is: " + rgba); rgba(59, 130, 246, 1)
 //		System.out.println("Hex code for the colour is: "+ hex); #3b82f6
 		String expectedcolor="rgba(59, 130, 246, 1)";
+		Thread.sleep(3000);
 		
 		if(rgba.equals(expectedcolor))
 		{
@@ -79,9 +81,39 @@ public class TC_DashboardPage extends BaseClass{
 	}
 	
 	@Test(priority=3)
+	public void Listview() throws InterruptedException{
+		driver.findElement(By.id("themeToggler")).click();
+		Thread.sleep(2000);
+		driver.findElement(By.id("listView")).click();
+		Thread.sleep(3000);
+		
+		WebElement addmember=driver.findElement(By.id("addMemberProjectBtn"));
+		WebElement editbtn=driver.findElement(By.id("editProjectBtn"));
+		WebElement deletebtn=driver.findElement(By.id("deleteProjectBtn"));
+		WebElement projectname=driver.findElement(By.xpath("//td[text()='Project Name']"));
+		WebElement createdname=driver.findElement(By.xpath("//td[text()='Created Date']"));
+		
+		if(addmember.isDisplayed() && editbtn.isDisplayed() && deletebtn.isDisplayed() && projectname.isDisplayed() && createdname.isDisplayed())
+		{
+			Assert.assertTrue(true);
+			logger.info("List View contains all the required sections");
+		}
+		else
+		{
+			Assert.assertTrue(false);
+			logger.info("List view doesn't contain all the required sections");
+		}
+	}
+	
+	@Test(priority=4)
 	public void Logout() throws InterruptedException {
 		
+		driver.findElement(By.id("mapView")).click();
+		Thread.sleep(2000);
+		
 		driver.findElement(By.id("logout")).click();
+		Thread.sleep(2000);
+		
 		WebElement logout=driver.findElement(By.xpath("//p[text()='Log in to your account.']"));
 		if(logout.isDisplayed())
 		{

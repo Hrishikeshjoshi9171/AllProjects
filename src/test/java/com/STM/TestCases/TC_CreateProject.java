@@ -15,38 +15,38 @@ public class TC_CreateProject extends BaseClass {
 		driver.findElement(By.id("login")).click();
 		Thread.sleep(2000);
 		
-		driver.findElement(By.xpath("//p[text()='Create Project ']")).click();
+		driver.findElement(By.id("createProjects")).click();
 		Thread.sleep(2000);
 		WebElement projectname=driver.findElement(By.name("project_name"));
 		WebElement projectdescription=driver.findElement(By.name("description"));
-		WebElement startat=driver.findElement(By.xpath("(//button)[11]"));
+		WebElement startat=driver.findElement(By.xpath("//button[text()='December 11th, 2023']"));
 		WebElement create=driver.findElement(By.xpath("//button[text()='Create']"));
 		Thread.sleep(2000);
 		
 		if(projectname.isDisplayed() && projectdescription.isDisplayed() && startat.isDisplayed() && create.isDisplayed())
 		{
 			Assert.assertTrue(true);
-			logger.info("It contains the required fields");
+			logger.info("Create project button contains the required fields");
 		}
 		else {
 			Assert.assertTrue(false);
-			logger.info("It doesn't contain the required sections");
+			logger.info("Create project button doesn't contain the required sections");
 		}
 	}
 	
 	@Test(priority=2)
 	public void createproject() throws InterruptedException{
 		
-		driver.findElement(By.name("project_name")).sendKeys("Test3");
+		driver.findElement(By.name("project_name")).sendKeys("Hrishikesh Testing");
 		driver.findElement(By.name("description")).sendKeys("This project is for checking");
-		driver.findElement(By.xpath("(//button)[10]")).click();
-		driver.findElement(By.xpath("//button[text()='25']")).click();
-		driver.findElement(By.xpath("(//button)[10]")).click();
+		driver.findElement(By.xpath("//button[text()='December 11th, 2023']")).click();
+		driver.findElement(By.xpath("//button[text()='11']")).click();
+		driver.findElement(By.xpath("//button[text()='December 11th, 2023']")).click();
 		Thread.sleep(2000);
 		driver.findElement(By.xpath("//button[text()='Create']")).click();
 		Thread.sleep(3000);
 		
-		WebElement project=driver.findElement(By.xpath("//p[text()='Test3']"));
+		WebElement project=driver.findElement(By.xpath("//p[text()='Hrishikesh Testing']"));
 		Thread.sleep(3000);
 		
 		if(project.isDisplayed())
@@ -62,11 +62,11 @@ public class TC_CreateProject extends BaseClass {
 	
 	@Test(priority=3)
 	public void deletebutton() throws InterruptedException{
-		driver.findElement(By.xpath("(//button[@id='deleteProject'])[5]")).click();
+		driver.findElement(By.xpath("(//button[@id='deleteProject'])[1]")).click();
 		driver.findElement(By.xpath("//button[text()='Continue']")).click();
 		Thread.sleep(2000);
 		
-		WebElement deletemessage=driver.findElement(By.xpath("//div[text()='Project Test3 deleted successfully']"));
+		WebElement deletemessage=driver.findElement(By.xpath("//div[text()='Project Hrishikesh Testing deleted successfully']"));
 		
 		if(deletemessage.isDisplayed()) {
 			Assert.assertTrue(true);
@@ -78,8 +78,8 @@ public class TC_CreateProject extends BaseClass {
 		}
 		Thread.sleep(2000);
 		
-		driver.findElement(By.xpath("//a[text()='Deleted Projects']")).click();
-		WebElement deletedproject=driver.findElement(By.xpath("//span[text()='Test3']"));
+		driver.findElement(By.id("deletedProjectsTab")).click();
+		WebElement deletedproject=driver.findElement(By.xpath("//span[text()='Hrishikesh Testing']"));
 		if(deletedproject.isDisplayed()) {
 			Assert.assertTrue(true);
 			logger.info("The project is displayed in deleted section");
@@ -94,16 +94,19 @@ public class TC_CreateProject extends BaseClass {
 	@Test(priority=4)
 	public void projectview() throws InterruptedException{
 		
-		driver.findElement(By.xpath("//a[text()='All Projects']")).click();
-		driver.findElement(By.xpath("//p[text()='Create Project ']")).click();
+		driver.findElement(By.id("allProjectsTab")).click();
+		Thread.sleep(2000);
+		driver.findElement(By.id("createProjects")).click();
+		Thread.sleep(3000);
 		driver.findElement(By.name("project_name")).sendKeys("sjdbodbouabojdasnvbsifboajnbfisbgobsigvbsibgobguib");
 		driver.findElement(By.name("description")).sendKeys("This project is for checking. ksdnsbisbjanibsigvbosndvl vbsognaobosdnosndo");
-		driver.findElement(By.xpath("(//button)[11]")).click();
+		driver.findElement(By.xpath("//button[text()='December 11th, 2023']")).click();
 		driver.findElement(By.xpath("//button[text()='26']")).click();
-		driver.findElement(By.xpath("(//button)[11]")).click();
+		driver.findElement(By.xpath("//button[text()='December 11th, 2023']")).click();
 		Thread.sleep(2000);
 		driver.findElement(By.xpath("//button[text()='Create']")).click();
-		WebElement delbtn=driver.findElement(By.xpath("(//button[@id='deleteProject'])[5]"));
+		
+		WebElement delbtn=driver.findElement(By.xpath("(//button[@id='deleteProject'])[1]"));
 		WebElement searchbyname=driver.findElement(By.id("searchByProjectName"));
 		if(delbtn.isDisplayed() && searchbyname.isDisplayed())
 		{

@@ -202,12 +202,12 @@ public class TC_AdminLogin extends BaseClass {
 		password.sendKeys(Keys.CONTROL, "a", Keys.DELETE);
 		confirmpassword.sendKeys(Keys.CONTROL, "a", Keys.DELETE);
 
-		firstname.sendKeys("Robert");
+		firstname.sendKeys("Rahul");
 		lastname.sendKeys(" ");
-		email.sendKeys("robert@meg-nxt.com");
-		password.sendKeys("Robby@1234");
+		email.sendKeys("rahul@meg-nxt.com");
+		password.sendKeys("Rahul@123");
 		driver.findElement(By.tagName("svg")).click();
-		confirmpassword.sendKeys("Robby@1234");
+		confirmpassword.sendKeys("Rahul@123");
 		Thread.sleep(2000);
 		driver.findElement(By.id("signup")).click();
 		Thread.sleep(3000);
@@ -225,7 +225,7 @@ public class TC_AdminLogin extends BaseClass {
 	@Test(priority = 7)
 	public void CorrectSignup() throws InterruptedException { // Signing up with all inputs Correct
 
-		driver.findElement(By.xpath("//a[text()='Sign up']")).click();
+		driver.findElement(By.id("signupRedirect")).click();
 
 		WebElement firstname = driver.findElement(By.name("firstname"));
 		WebElement lastname = driver.findElement(By.name("lastname"));
@@ -233,11 +233,11 @@ public class TC_AdminLogin extends BaseClass {
 		WebElement password = driver.findElement(By.name("password"));
 		WebElement confirmpassword = driver.findElement(By.name("confirmPassword"));
 
-		firstname.sendKeys("Pranav");
-		lastname.sendKeys("Asthana");
-		email.sendKeys("pranav@ceinsys.com");
-		password.sendKeys("Pranav@123");
-		confirmpassword.sendKeys("Pranav@123");
+		firstname.sendKeys("Hrishikesh");
+		lastname.sendKeys("Joshi");
+		email.sendKeys("hrishikesh@ceinsys.com");
+		password.sendKeys("Hrishi@123");
+		confirmpassword.sendKeys("Hrishi@123");
 		driver.findElement(By.id("signup")).click();
 		Thread.sleep(3000);
 
@@ -345,10 +345,11 @@ public class TC_AdminLogin extends BaseClass {
 	
 	@Test(priority=11)
 	public void UnapprovedLogin() throws InterruptedException{ //Login with recently signup user which is not approved by Admin
-		driver.findElement(By.name("email")).sendKeys("pranav@ceinsys.com");
-		driver.findElement(By.name("password")).sendKeys("Pranav@123");
+		driver.findElement(By.name("email")).sendKeys("rahul@meg-nxt.com");
+		driver.findElement(By.name("password")).sendKeys("Rahul@123");
 		driver.findElement(By.id("login")).click();
-		Thread.sleep(3000);		
+		Thread.sleep(3000);
+		
 		WebElement login=driver.findElement(By.xpath("//div[text()='Your account is not activated yet.Please contact admin.']"));
 		if(login.isDisplayed()) {
 			Assert.assertTrue(true);
@@ -382,8 +383,8 @@ public class TC_AdminLogin extends BaseClass {
 			Assert.assertTrue(false);
 			logger.info("Login is not successful");
 		}
-//		driver.findElement(By.xpath("//button[2]")).click();
-//		Thread.sleep(3000);
+		
+		driver.findElement(By.id("logout")).click();
 	}
 
 }
