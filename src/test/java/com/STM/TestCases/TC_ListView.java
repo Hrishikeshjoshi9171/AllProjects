@@ -23,7 +23,7 @@ public class TC_ListView extends BaseClass{
 		
 		WebElement projectname=driver.findElement(By.name("project_name"));
 		WebElement projectdescription=driver.findElement(By.name("description"));
-		WebElement startat=driver.findElement(By.xpath("//button[text()='December 11th, 2023']"));
+		WebElement startat=driver.findElement(By.xpath("//button[text()='December 6th, 2023']"));
 		WebElement edit=driver.findElement(By.xpath("//button[text()='Edit']"));
 		Thread.sleep(2000);
 		
@@ -47,7 +47,7 @@ public class TC_ListView extends BaseClass{
 		driver.findElement(By.xpath("//button[text()='Continue']")).click();
 		Thread.sleep(1500);
 		
-		WebElement projdelete=driver.findElement(By.xpath("//div[text()='Project Hrishikesh Testing deleted successfully']"));
+		WebElement projdelete=driver.findElement(By.xpath("//div[text()='Project Test1 deleted successfully']"));
 		if(projdelete.isDisplayed())
 		{
 			Assert.assertTrue(true);

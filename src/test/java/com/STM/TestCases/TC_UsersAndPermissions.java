@@ -48,8 +48,8 @@ public class TC_UsersAndPermissions extends BaseClass {
 	@Test(priority=2)
 	public void pendingapproval() throws InterruptedException {
 		
-		WebElement name = driver.findElement(By.xpath("//span[text()='Rohit Sharma ']"));
-		WebElement email = driver.findElement(By.xpath("//td[text()='rohit@ceinsys.com']"));
+		WebElement name = driver.findElement(By.xpath("//span[text()='Pranav Asthana']"));
+		WebElement email = driver.findElement(By.xpath("//td[text()='pranav@ceinsys.com']"));
 		WebElement approve = driver.findElement(By.id("approveButton"));
 		WebElement reject = driver.findElement(By.id("rejectButton"));
 		
@@ -67,7 +67,7 @@ public class TC_UsersAndPermissions extends BaseClass {
 	@Test(priority=3)
 	public void RejectButton() throws InterruptedException{
 		
-		driver.findElement(By.xpath("(//button[@id='rejectButton'])[1]")).click();
+		driver.findElement(By.xpath("(//button[@id='rejectButton'])[2]")).click();
 		Thread.sleep(2000);
 		
 		WebElement message=driver.findElement(By.xpath("//div[text()='Rahul rejected successfully']"));
@@ -88,7 +88,7 @@ public class TC_UsersAndPermissions extends BaseClass {
 		driver.findElement(By.id("approveButton")).click();
 		Thread.sleep(2000);
 		
-		WebElement name=driver.findElement(By.xpath("//div[text()='Rohit approved successfully']"));
+		WebElement name=driver.findElement(By.xpath("//div[text()='Pranav approved successfully']"));
 		
 		if(name.isDisplayed()) {
 			Assert.assertTrue(true);

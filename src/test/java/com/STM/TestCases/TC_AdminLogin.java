@@ -1,7 +1,10 @@
 package com.STM.TestCases;
 
+import java.io.IOException;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.Color;
 import org.testng.Assert;
@@ -12,7 +15,7 @@ import com.STM.PageObjects.LoginPage;
 public class TC_AdminLogin extends BaseClass {
 
 	@Test(priority = 1)
-	public void SignupError1() throws InterruptedException {
+	public void SignupError1() throws InterruptedException, IOException {
 		// Wrong first name is provided during Sign Up
 
 		driver.findElement(By.xpath("//a[text()='Sign up']")).click();               // Path to Sign up button
@@ -35,12 +38,14 @@ public class TC_AdminLogin extends BaseClass {
 		WebElement signup = driver.findElement(By.xpath("//p[text()='must contain only alphabets']")); //Storing path 
 		                                                                                                  //of output Data
 		
-		if (signup.isDisplayed()) {
-
+		if (signup.isDisplayed())
+		{
 			// Using assertion to validate the results
 			Assert.assertTrue(true);
 			logger.info("Signup unsuccessful due to invalid format of First Name");
-		} else {
+		} 
+		else {
+			capturescreen(driver, "SignupError1");
 			Assert.assertTrue(false);
 			logger.info("Signup is successful with invalid format of First Name");
 		}
@@ -233,11 +238,11 @@ public class TC_AdminLogin extends BaseClass {
 		WebElement password = driver.findElement(By.name("password"));
 		WebElement confirmpassword = driver.findElement(By.name("confirmPassword"));
 
-		firstname.sendKeys("Hrishikesh");
-		lastname.sendKeys("Joshi");
-		email.sendKeys("hrishikesh@ceinsys.com");
-		password.sendKeys("Hrishi@123");
-		confirmpassword.sendKeys("Hrishi@123");
+		firstname.sendKeys("Pranav");
+		lastname.sendKeys("Asthana");
+		email.sendKeys("pranav@ceinsys.com");
+		password.sendKeys("pranav@123");
+		confirmpassword.sendKeys("pranav@123");
 		driver.findElement(By.id("signup")).click();
 		Thread.sleep(3000);
 

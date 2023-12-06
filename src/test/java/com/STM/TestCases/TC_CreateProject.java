@@ -19,7 +19,7 @@ public class TC_CreateProject extends BaseClass {
 		Thread.sleep(2000);
 		WebElement projectname=driver.findElement(By.name("project_name"));
 		WebElement projectdescription=driver.findElement(By.name("description"));
-		WebElement startat=driver.findElement(By.xpath("//button[text()='December 11th, 2023']"));
+		WebElement startat=driver.findElement(By.xpath("//button[text()='December 6th, 2023']"));
 		WebElement create=driver.findElement(By.xpath("//button[text()='Create']"));
 		Thread.sleep(2000);
 		
@@ -39,9 +39,9 @@ public class TC_CreateProject extends BaseClass {
 		
 		driver.findElement(By.name("project_name")).sendKeys("Hrishikesh Testing");
 		driver.findElement(By.name("description")).sendKeys("This project is for checking");
-		driver.findElement(By.xpath("//button[text()='December 11th, 2023']")).click();
+		driver.findElement(By.xpath("//button[text()='December 6th, 2023']")).click();
 		driver.findElement(By.xpath("//button[text()='11']")).click();
-		driver.findElement(By.xpath("//button[text()='December 11th, 2023']")).click();
+		driver.findElement(By.xpath("//button[text()='December 6th, 2023']")).click();
 		Thread.sleep(2000);
 		driver.findElement(By.xpath("//button[text()='Create']")).click();
 		Thread.sleep(3000);
@@ -62,7 +62,7 @@ public class TC_CreateProject extends BaseClass {
 	
 	@Test(priority=3)
 	public void deletebutton() throws InterruptedException{
-		driver.findElement(By.xpath("(//button[@id='deleteProject'])[1]")).click();
+		driver.findElement(By.xpath("(//button[@id='deleteProject'])[3]")).click();
 		driver.findElement(By.xpath("//button[text()='Continue']")).click();
 		Thread.sleep(2000);
 		
@@ -100,9 +100,9 @@ public class TC_CreateProject extends BaseClass {
 		Thread.sleep(3000);
 		driver.findElement(By.name("project_name")).sendKeys("sjdbodbouabojdasnvbsifboajnbfisbgobsigvbsibgobguib");
 		driver.findElement(By.name("description")).sendKeys("This project is for checking. ksdnsbisbjanibsigvbosndvl vbsognaobosdnosndo");
-		driver.findElement(By.xpath("//button[text()='December 11th, 2023']")).click();
+		driver.findElement(By.xpath("//button[text()='December 6th, 2023']")).click();
 		driver.findElement(By.xpath("//button[text()='26']")).click();
-		driver.findElement(By.xpath("//button[text()='December 11th, 2023']")).click();
+		driver.findElement(By.xpath("//button[text()='December 6th, 2023']")).click();
 		Thread.sleep(2000);
 		driver.findElement(By.xpath("//button[text()='Create']")).click();
 		
