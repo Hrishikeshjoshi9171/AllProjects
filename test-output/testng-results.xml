@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="11" passed="11" failed="0" skipped="0">
+<testng-results ignored="0" total="7" passed="7" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-10-09T17:27:38 IST" name="Default suite" finished-at="2023-10-09T17:28:47 IST" duration-ms="68868">
+  <suite started-at="2023-12-06T11:56:39 IST" name="Suite" finished-at="2023-12-06T11:58:17 IST" duration-ms="97812">
     <groups>
     </groups>
-    <test started-at="2023-10-09T17:27:38 IST" name="Default test" finished-at="2023-10-09T17:28:47 IST" duration-ms="68868">
-      <class name="com.STM.TestCases.TC_AdminLogin">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.STM.TestCases.TC_AdminLogin@196a42c3]" started-at="2023-10-09T17:27:38 IST" name="setup" finished-at="2023-10-09T17:27:44 IST" duration-ms="6014" status="PASS">
+    <test started-at="2023-12-06T11:56:39 IST" name="Smoke Test" finished-at="2023-12-06T11:58:17 IST" duration-ms="97812">
+      <class name="com.STM.SmokeSuite.SmokeTest">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.STM.SmokeSuite.SmokeTest@3ba987b8]" started-at="2023-12-06T11:56:39 IST" name="setup" finished-at="2023-12-06T11:56:45 IST" duration-ms="5575" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,55 +18,39 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="SignupError1()[pri:1, instance:com.STM.TestCases.TC_AdminLogin@196a42c3]" started-at="2023-10-09T17:27:44 IST" name="SignupError1" finished-at="2023-10-09T17:27:48 IST" duration-ms="4341" status="PASS">
+        <test-method signature="signuptest()[pri:1, instance:com.STM.SmokeSuite.SmokeTest@3ba987b8]" started-at="2023-12-06T11:56:45 IST" name="signuptest" finished-at="2023-12-06T11:56:57 IST" duration-ms="12135" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- SignupError1 -->
-        <test-method signature="SignupError2()[pri:2, instance:com.STM.TestCases.TC_AdminLogin@196a42c3]" started-at="2023-10-09T17:27:49 IST" name="SignupError2" finished-at="2023-10-09T17:27:53 IST" duration-ms="4464" status="PASS">
+        </test-method> <!-- signuptest -->
+        <test-method signature="logintest()[pri:2, instance:com.STM.SmokeSuite.SmokeTest@3ba987b8]" started-at="2023-12-06T11:56:57 IST" name="logintest" finished-at="2023-12-06T11:57:00 IST" duration-ms="3256" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- SignupError2 -->
-        <test-method signature="SignupError3()[pri:3, instance:com.STM.TestCases.TC_AdminLogin@196a42c3]" started-at="2023-10-09T17:27:53 IST" name="SignupError3" finished-at="2023-10-09T17:27:57 IST" duration-ms="4284" status="PASS">
+        </test-method> <!-- logintest -->
+        <test-method signature="UsersPermissionsPage()[pri:3, instance:com.STM.SmokeSuite.SmokeTest@3ba987b8]" started-at="2023-12-06T11:57:00 IST" name="UsersPermissionsPage" finished-at="2023-12-06T11:57:22 IST" duration-ms="21657" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- SignupError3 -->
-        <test-method signature="SignupError4()[pri:4, instance:com.STM.TestCases.TC_AdminLogin@196a42c3]" started-at="2023-10-09T17:27:57 IST" name="SignupError4" finished-at="2023-10-09T17:28:01 IST" duration-ms="4221" status="PASS">
+        </test-method> <!-- UsersPermissionsPage -->
+        <test-method signature="createproject()[pri:4, instance:com.STM.SmokeSuite.SmokeTest@3ba987b8]" started-at="2023-12-06T11:57:22 IST" name="createproject" finished-at="2023-12-06T11:57:29 IST" duration-ms="6793" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- SignupError4 -->
-        <test-method signature="SignupError5()[pri:5, instance:com.STM.TestCases.TC_AdminLogin@196a42c3]" started-at="2023-10-09T17:28:01 IST" name="SignupError5" finished-at="2023-10-09T17:28:06 IST" duration-ms="4331" status="PASS">
+        </test-method> <!-- createproject -->
+        <test-method signature="deletedprojects()[pri:5, instance:com.STM.SmokeSuite.SmokeTest@3ba987b8]" started-at="2023-12-06T11:57:29 IST" name="deletedprojects" finished-at="2023-12-06T11:57:37 IST" duration-ms="8533" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- SignupError5 -->
-        <test-method signature="SignupwithoutLastname()[pri:6, instance:com.STM.TestCases.TC_AdminLogin@196a42c3]" started-at="2023-10-09T17:28:06 IST" name="SignupwithoutLastname" finished-at="2023-10-09T17:28:12 IST" duration-ms="6525" status="PASS">
+        </test-method> <!-- deletedprojects -->
+        <test-method signature="UserGroupPage()[pri:6, instance:com.STM.SmokeSuite.SmokeTest@3ba987b8]" started-at="2023-12-06T11:57:37 IST" name="UserGroupPage" finished-at="2023-12-06T11:58:03 IST" duration-ms="25796" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- SignupwithoutLastname -->
-        <test-method signature="CorrectSignup()[pri:7, instance:com.STM.TestCases.TC_AdminLogin@196a42c3]" started-at="2023-10-09T17:28:12 IST" name="CorrectSignup" finished-at="2023-10-09T17:28:16 IST" duration-ms="3863" status="PASS">
+        </test-method> <!-- UserGroupPage -->
+        <test-method signature="publicLayers()[pri:7, instance:com.STM.SmokeSuite.SmokeTest@3ba987b8]" started-at="2023-12-06T11:58:03 IST" name="publicLayers" finished-at="2023-12-06T11:58:17 IST" duration-ms="13484" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- CorrectSignup -->
-        <test-method signature="WrongLogin1()[pri:8, instance:com.STM.TestCases.TC_AdminLogin@196a42c3]" started-at="2023-10-09T17:28:16 IST" name="WrongLogin1" finished-at="2023-10-09T17:28:24 IST" duration-ms="7757" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- WrongLogin1 -->
-        <test-method signature="WrongLogin2()[pri:9, instance:com.STM.TestCases.TC_AdminLogin@196a42c3]" started-at="2023-10-09T17:28:24 IST" name="WrongLogin2" finished-at="2023-10-09T17:28:33 IST" duration-ms="8687" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- WrongLogin2 -->
-        <test-method signature="WrongLogin3()[pri:10, instance:com.STM.TestCases.TC_AdminLogin@196a42c3]" started-at="2023-10-09T17:28:33 IST" name="WrongLogin3" finished-at="2023-10-09T17:28:41 IST" duration-ms="8660" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- WrongLogin3 -->
-        <test-method signature="CorrectLogin()[pri:11, instance:com.STM.TestCases.TC_AdminLogin@196a42c3]" started-at="2023-10-09T17:28:41 IST" name="CorrectLogin" finished-at="2023-10-09T17:28:47 IST" duration-ms="5445" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- CorrectLogin -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.STM.TestCases.TC_AdminLogin@196a42c3]" started-at="2023-10-09T17:28:47 IST" name="tearDown" finished-at="2023-10-09T17:28:47 IST" duration-ms="190" status="PASS">
+        </test-method> <!-- publicLayers -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.STM.SmokeSuite.SmokeTest@3ba987b8]" started-at="2023-12-06T11:58:17 IST" name="tearDown" finished-at="2023-12-06T11:58:17 IST" duration-ms="326" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.STM.TestCases.TC_AdminLogin -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      </class> <!-- com.STM.SmokeSuite.SmokeTest -->
+    </test> <!-- Smoke Test -->
+  </suite> <!-- Suite -->
 </testng-results>
