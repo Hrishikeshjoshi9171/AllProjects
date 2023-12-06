@@ -9,15 +9,27 @@
 	  <parameter name="browserName" value="chrome"/>
     <classes>
       <class name="com.STM.TestCases.TC_AdminLogin"/>
+      <class name="com.STM.TestCases.TC_UsersAndPermissions"/>
+      <class name="com.STM.TestCases.TC_CreateProject"/>
+      <class name="com.STM.TestCases.TC_DeletedProjects"/>
+      <class name="com.STM.TestCases.TC_DashboardPage"/>
+      <class name="com.STM.TestCases.TC_ListView"/>
+      <class name="com.STM.TestCases.TC_UserGroups"/>
     </classes>
   </test> <!-- Test -->
   
-
+<!--
   <test thread-count="5" name="Edge Test">
 	  <parameter name="browserName" value="edge"/>
     <classes>
       <class name="com.STM.TestCases.TC_AdminLogin"/>
+      <class name="com.STM.TestCases.TC_UsersAndPermissions"/>
+      <class name="com.STM.TestCases.TC_CreateProject"/>
+      <class name="com.STM.TestCases.TC_DeletedProjects"/>
+      <class name="com.STM.TestCases.TC_DashboardPage"/>
+      <class name="com.STM.TestCases.TC_ListView"/>
+      <class name="com.STM.TestCases.TC_UserGroups"/>
     </classes>
   </test>
-
+-->
 </suite> <!-- Suite -->
