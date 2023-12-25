@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+<parameter name="URL" value="https://kite.zerodha.com/"></parameter>
+<parameter name="Username" value="GP8097"></parameter>
+<parameter name="Password" value="gms@0110"></parameter>
+<parameter name="PIN" value="111000"></parameter>
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="TestNG.ParameterTest"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

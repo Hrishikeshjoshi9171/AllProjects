@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="TestNG.Hard_Assertion1"/>
+      <class name="TestNG.KiteTest1"/>
+      <class name="TestNG.Testng_Test_cases"/>
+      <class name="TestNG.KiteTest2"/>
+      <class name="TestNG.KiteTest3"/>
+      <class name="TestNG.Hard_Assertion"/>
+      <class name="TestNG.KiteTest4"/>
+      <class name="TestNG.KiteTest5"/>
+      <class name="TestNG.KiteTest6"/>
+      <class name="TestNG.KiteTest7"/>
+      <class name="TestNG.KiteTest8"/>
+      <class name="TestNG.EmailableReport"/>
+      <class name="TestNG.TestngAnnotations"/>
+      <class name="TestNG.Soft_Assertion"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
