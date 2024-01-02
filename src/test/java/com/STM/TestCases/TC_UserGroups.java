@@ -11,7 +11,7 @@ import org.testng.annotations.Test;
 public class TC_UserGroups extends BaseClass{
 	
 	@Test(priority=1)
-	public void UserGroupPage() throws InterruptedException{
+	public void UserGroupPage() throws InterruptedException, IOException{
 		
 		driver.findElement(By.name("email")).sendKeys("admin@ceinsys.com");
 		driver.findElement(By.name("password")).sendKeys("Admin@123");
@@ -36,13 +36,14 @@ public class TC_UserGroups extends BaseClass{
 			logger.info("All the sections are displayed in User Groups");
 		}
 		else {
+			capturescreen(driver, "UserGroupPage");
 			Assert.assertTrue(false);
 			logger.info("All sections are not displayed in User Groups");
 		}
 	}
 	
 	@Test(priority=2)
-	public void creategroup() throws InterruptedException{
+	public void creategroup() throws InterruptedException, IOException{
 		
 		driver.findElement(By.id("createGroupButton")).click();
 		Thread.sleep(3000);
@@ -62,6 +63,7 @@ public class TC_UserGroups extends BaseClass{
 			logger.info("Create Group button contains all the required sections");
 		}
 		else {
+			capturescreen(driver, "creategroup");
 			Assert.assertTrue(false);
 			logger.info("Create Group button doesn't contain all the required sections");
 		}
@@ -70,7 +72,7 @@ public class TC_UserGroups extends BaseClass{
 	@Test(priority=3)
 	public void newgroupcreate() throws InterruptedException, IOException{
 		
-		driver.findElement(By.id("groupName")).sendKeys("Test2");
+		driver.findElement(By.id("groupName")).sendKeys("Test1");
 		driver.findElement(By.name("selectUser")).click();
 		driver.findElement(By.xpath("//div[text()='Admin']")).click();
 		Thread.sleep(2000);
@@ -131,7 +133,7 @@ public class TC_UserGroups extends BaseClass{
 	}
 	
 	@Test(priority=5)
-	public void editbutton() throws InterruptedException{
+	public void editbutton() throws InterruptedException, IOException{
 		
 		driver.findElement(By.id("editGroupButton")).click();
 		Thread.sleep(3000);
@@ -143,7 +145,7 @@ public class TC_UserGroups extends BaseClass{
 		role2.selectByVisibleText("Owner");
 		Thread.sleep(2000);
 		driver.findElement(By.id("addMemberButton")).click();
-		driver.findElement(By.xpath("(//button[@id='deleteButtonn'])[1]")).click();
+		driver.findElement(By.xpath("(//button[@id='deleteButtonn'])[3]")).click();
 		driver.findElement(By.xpath("//button[text()='Continue']")).click();
 		driver.findElement(By.id("changeRoleButton")).click();
 		Select role3=new Select(driver.findElement(By.xpath("(//button)[10]")));
@@ -158,8 +160,140 @@ public class TC_UserGroups extends BaseClass{
 			logger.info("All the sections in the user group can be edited");
 		}
 		else {
+			capturescreen(driver, "editbutton");
 			Assert.assertTrue(false);
 			logger.info("All the sections in the user group are not getting edited");
 		}
+	}
+	
+	@Test(priority=6)
+	public void Actionsbtn() throws InterruptedException, IOException{
+		
+		driver.findElement(By.id("moreGroupButton")).click();
+		Thread.sleep(3000);
+		WebElement blockbtn=driver.findElement(By.id("blockButtonn"));
+		WebElement deletebtn=driver.findElement(By.id("deleteButtonn"));
+		if(blockbtn.isDisplayed() && deletebtn.isDisplayed())
+		{
+			Assert.assertTrue(true);
+			logger.info("Block and Delete Group buttons are present in the Actions Button");
+		}
+		else {
+			capturescreen(driver, "Actionsbtn");
+			Assert.assertTrue(false);
+			logger.info("Block and Delete Group buttons are not present in the Actions Button");
+		}
+	}
+	
+	@Test(priority=7)
+	public void blockgroupbtn() throws InterruptedException, IOException{
+		
+		driver.findElement(By.id("blockButtonn")).click();
+		WebElement groupblock=driver.findElement(By.xpath("//div[text()='Group blocked successfully']"));
+		if(groupblock.isDisplayed())
+		{
+			Assert.assertTrue(true);
+			logger.info("Group is blocked successfully");
+		}
+		else {
+			capturescreen(driver, "blockgroupbtn");
+			Assert.assertTrue(false);
+			logger.info("User Group is not blocked");
+		}
+	}
+	
+	@Test(priority=8)
+	public void Blockedsection() throws InterruptedException, IOException{
+		
+		driver.findElement(By.id("blockedTabb")).click();
+		Thread.sleep(3000);
+		WebElement groupname=driver.findElement(By.xpath("//td[text()='Group Name']"));
+		WebElement members=driver.findElement(By.xpath("//td[text()='Members']"));
+		WebElement unblockbtn=driver.findElement(By.xpath("//button[text()='Unblock']"));
+		WebElement blockedgroup=driver.findElement(By.xpath("//span[text()='Production-Zone-1']"));
+		
+		if(groupname.isDisplayed() && members.isDisplayed() && unblockbtn.isDisplayed() && blockedgroup.isDisplayed())
+		{
+			Assert.assertTrue(true);
+			logger.info("Blocked sections contains all the required fields");
+		}
+		else {
+			capturescreen(driver, "Blockedsection");
+			Assert.assertTrue(false);
+			logger.info("Blocked sections doesn't contain all the required fields");
+		}
+		
+		driver.findElement(By.id("1unBlockGroup")).click();
+		Thread.sleep(3000);
+		WebElement unblockmsg=driver.findElement(By.xpath("//div[text()='Group Unblocked successfully']"));
+		if(unblockmsg.isDisplayed())
+		{
+			Assert.assertTrue(true);
+			logger.info("Group unblocked successfully");
+		}
+		else {
+			capturescreen(driver, "unblock");
+			Assert.assertTrue(false);
+			logger.info("Group is not unblocked");
+		}
+	}
+	
+	@Test(priority=9)
+	public void deletegroupbtn() throws InterruptedException, IOException {
+		
+		driver.findElement(By.id("activeTabb")).click();
+		Thread.sleep(2000);
+		driver.findElement(By.id("moreGroupButton")).click();
+		Thread.sleep(2000);
+		driver.findElement(By.id("deleteButtonn")).click();
+		Thread.sleep(3000);
+		WebElement deletegroup=driver.findElement(By.xpath("//div[text()='Group deleted successfully']"));
+		if(deletegroup.isDisplayed())
+		{
+			Assert.assertTrue(true);
+			logger.info("Group is deleted successfully");
+		}
+		else {
+			capturescreen(driver, "deletegroupbtn");
+			Assert.assertTrue(false);
+			logger.info("Group is not deleted");
+		}
+	}
+	
+	@Test(priority=10)
+	public void Deletedgroup() throws InterruptedException, IOException {
+		
+		driver.findElement(By.id("deletedTabb")).click();
+		Thread.sleep(3000);
+		WebElement groupname=driver.findElement(By.xpath("//td[text()='Group Name']"));
+		WebElement members=driver.findElement(By.xpath("//td[text()='Members']"));
+		WebElement restorebtn=driver.findElement(By.id("1restoreGroup"));
+		WebElement deletedgroup=driver.findElement(By.xpath("//span[text()='Production-Zone-1']"));
+		if(groupname.isDisplayed() && members.isDisplayed() && restorebtn.isDisplayed() && deletedgroup.isDisplayed())
+		{
+			Assert.assertTrue(true);
+			logger.info("Deleted sections contains all the required fields");
+		}
+		else {
+			capturescreen(driver, "Deletedgroup");
+			Assert.assertTrue(false);
+			logger.info("Deleted section doesn't contain all the required fields");
+		}
+		
+		driver.findElement(By.id("1restoreGroup")).click();
+		Thread.sleep(3000);
+		WebElement restoremsg=driver.findElement(By.xpath("//div[text()='Group Restored successfully']"));
+		if(restoremsg.isDisplayed())
+		{
+			Assert.assertTrue(true);
+			logger.info("Group restored successfully");
+		}
+		else {
+			capturescreen(driver, "restore");
+			Assert.assertTrue(false);
+			logger.info("Group is not restored");
+		}
+		
+		driver.findElement(By.id("logout")).click();
 	}
 }

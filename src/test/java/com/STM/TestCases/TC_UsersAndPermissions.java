@@ -48,8 +48,8 @@ public class TC_UsersAndPermissions extends BaseClass {
 	@Test(priority=2)
 	public void pendingapproval() throws InterruptedException {
 		
-		WebElement name = driver.findElement(By.xpath("//span[text()='Pranav Asthana']"));
-		WebElement email = driver.findElement(By.xpath("//td[text()='pranav@ceinsys.com']"));
+		WebElement name = driver.findElement(By.xpath("//span[text()='Rohit Yadav']"));
+		WebElement email = driver.findElement(By.xpath("//td[text()='rohit@ceinsys.com']"));
 		WebElement approve = driver.findElement(By.id("approveButton"));
 		WebElement reject = driver.findElement(By.id("rejectButton"));
 		
@@ -67,7 +67,7 @@ public class TC_UsersAndPermissions extends BaseClass {
 	@Test(priority=3)
 	public void RejectButton() throws InterruptedException{
 		
-		driver.findElement(By.xpath("(//button[@id='rejectButton'])[2]")).click();
+		driver.findElement(By.xpath("(//button[@id='rejectButton'])[1]")).click();
 		Thread.sleep(2000);
 		
 		WebElement message=driver.findElement(By.xpath("//div[text()='Rahul rejected successfully']"));
@@ -88,7 +88,7 @@ public class TC_UsersAndPermissions extends BaseClass {
 		driver.findElement(By.id("approveButton")).click();
 		Thread.sleep(2000);
 		
-		WebElement name=driver.findElement(By.xpath("//div[text()='Pranav approved successfully']"));
+		WebElement name=driver.findElement(By.xpath("//div[text()='Rohit approved successfully']"));
 		
 		if(name.isDisplayed()) {
 			Assert.assertTrue(true);
@@ -172,7 +172,7 @@ public class TC_UsersAndPermissions extends BaseClass {
 		
 		driver.findElement(By.id("blockButton")).click();
 		Thread.sleep(2000);
-		WebElement userblock=driver.findElement(By.xpath("//div[text()='Hrishikesh blocked successfully']"));
+		WebElement userblock=driver.findElement(By.xpath("//div[text()='Chandrakant blocked successfully']"));
 		if(userblock.isDisplayed()) {
 			Assert.assertTrue(true);
 			logger.info("User is blocked");
@@ -203,7 +203,7 @@ public class TC_UsersAndPermissions extends BaseClass {
 		
 		unblockbtn.click();
 		Thread.sleep(2000);
-		WebElement unblockuser=driver.findElement(By.xpath("//div[text()='Hrishikesh unblocked successfully']"));
+		WebElement unblockuser=driver.findElement(By.xpath("//div[text()='Chandrakant unblocked successfully']"));
 		
 		if(unblockuser.isDisplayed())
 		{
@@ -225,7 +225,7 @@ public class TC_UsersAndPermissions extends BaseClass {
 		driver.findElement(By.id("deleteButton")).click();
 		Thread.sleep(2000);
 		
-		WebElement deleteuser=driver.findElement(By.xpath("//div[text()='Hrishikesh deleted successfully']"));
+		WebElement deleteuser=driver.findElement(By.xpath("//div[text()='Chandrakant deleted successfully']"));
 		if(deleteuser.isDisplayed())
 		{
 			Assert.assertTrue(true);
@@ -258,7 +258,7 @@ public class TC_UsersAndPermissions extends BaseClass {
 		
 		restorebtn.click();
 		Thread.sleep(2000);
-		WebElement restoreuser=driver.findElement(By.xpath("//div[text()='Hrishikesh restored successfully']"));
+		WebElement restoreuser=driver.findElement(By.xpath("//div[text()='Chandrakant restored successfully']"));
 		
 		if(restoreuser.isDisplayed())
 		{

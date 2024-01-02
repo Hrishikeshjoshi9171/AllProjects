@@ -238,11 +238,11 @@ public class TC_AdminLogin extends BaseClass {
 		WebElement password = driver.findElement(By.name("password"));
 		WebElement confirmpassword = driver.findElement(By.name("confirmPassword"));
 
-		firstname.sendKeys("Pranav");
-		lastname.sendKeys("Asthana");
-		email.sendKeys("pranav@ceinsys.com");
-		password.sendKeys("pranav@123");
-		confirmpassword.sendKeys("pranav@123");
+		firstname.sendKeys("Rohit");
+		lastname.sendKeys("Yadav");
+		email.sendKeys("rohit@ceinsys.com");
+		password.sendKeys("Rohit@123");
+		confirmpassword.sendKeys("Rohit@123");
 		driver.findElement(By.id("signup")).click();
 		Thread.sleep(3000);
 

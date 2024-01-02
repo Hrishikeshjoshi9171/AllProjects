@@ -16,7 +16,7 @@ public class TC_DeletedProjects extends BaseClass{
 //		Thread.sleep(2000);
 		
 		driver.findElement(By.id("deletedProjectsTab")).click();
-		driver.findElement(By.xpath("//button[text()='Restore']")).click();
+		driver.findElement(By.xpath("(//button[text()='Restore'])[2]")).click();
 		Thread.sleep(2000);
 		
 		WebElement restoremessage=driver.findElement(By.xpath("//div[text()='Project Hrishikesh Testing Restored']"));
