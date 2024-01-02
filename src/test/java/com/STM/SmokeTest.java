@@ -1,6 +1,7 @@
 package com.STM.SmokeSuite;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
@@ -35,11 +36,11 @@ public class SmokeTest extends BaseClass {
 			logger.info("Signup section doesn't has all the required fields");
 		}
 		
-		firstname.sendKeys("Hrishikesh");
-		lastname.sendKeys("Joshi");
-		email.sendKeys("hrishikesh@ceinsys.com");
-		password.sendKeys("hrishi@123");
-		confirmpassword.sendKeys("hrishi@123");
+		firstname.sendKeys("User");
+		lastname.sendKeys(" ");
+		email.sendKeys("user@ceinsys.com");
+		password.sendKeys("User@123");
+		confirmpassword.sendKeys("User@123");
 		signupbtn.click();
 		Thread.sleep(2000);
 		
@@ -59,8 +60,8 @@ public class SmokeTest extends BaseClass {
 		driver.findElement(By.name("firstname")).sendKeys("Rahul");
 		driver.findElement(By.name("lastname")).sendKeys("Sharma");
 		driver.findElement(By.name("email")).sendKeys("rahul@ceinsys.com");
-		driver.findElement(By.name("password")).sendKeys("Ritesh@123");
-		driver.findElement(By.name("confirmPassword")).sendKeys("Ritesh@123");
+		driver.findElement(By.name("password")).sendKeys("Rahul@123");
+		driver.findElement(By.name("confirmPassword")).sendKeys("Rahul@123");
 		driver.findElement(By.id("signup")).click();
 		Thread.sleep(3000);
 	}
@@ -110,7 +111,7 @@ public class SmokeTest extends BaseClass {
 		driver.findElement(By.xpath("(//button[@id='rejectButton'])[2]")).click();
 		Thread.sleep(2000);
 		
-		WebElement userreject=driver.findElement(By.xpath("//div[text()='Rahul rejected successfully']"));
+		WebElement userreject=driver.findElement(By.xpath("//div[text()='User rejected successfully']"));
 		
 		if(userreject.isDisplayed()) {
 			Assert.assertTrue(true);
@@ -124,7 +125,7 @@ public class SmokeTest extends BaseClass {
 		driver.findElement(By.id("approveButton")).click();
 		Thread.sleep(2000);
 		
-		WebElement userapprove=driver.findElement(By.xpath("//div[text()='Hrishikesh approved successfully']"));
+		WebElement userapprove=driver.findElement(By.xpath("//div[text()='Rahul approved successfully']"));
 		
 		if(userapprove.isDisplayed()) {
 			Assert.assertTrue(true);
@@ -185,7 +186,7 @@ public class SmokeTest extends BaseClass {
 		
 		WebElement projectname=driver.findElement(By.name("project_name"));
 		WebElement projectdescription=driver.findElement(By.name("description"));
-		WebElement startat=driver.findElement(By.xpath("//button[text()='December 6th, 2023']"));
+		WebElement startat=driver.findElement(By.name("startAt"));
 		WebElement create=driver.findElement(By.xpath("//button[text()='Create']"));
 		Thread.sleep(2000);
 		
@@ -199,15 +200,15 @@ public class SmokeTest extends BaseClass {
 			logger.info("Create Project Button doesn't contain the required sections");
 		}
 		
-		projectname.sendKeys("Test1");
-		projectdescription.sendKeys("This project is for Testing");
+		projectname.sendKeys("Test8");
+		projectdescription.sendKeys("Project for Smoke Testing ");
 		startat.click();
-		driver.findElement(By.xpath("//button[text()='7']")).click();
+		driver.findElement(By.xpath("//button[text()='23']")).click();
 		startat.click();
 		create.click();
 		Thread.sleep(2000);
 		
-		WebElement createproject=driver.findElement(By.xpath("//div[text()='Test1 created successfully']"));
+		WebElement createproject=driver.findElement(By.xpath("//div[text()='Test8 created successfully']"));
 		
 		if(createproject.isDisplayed())
 		{
@@ -223,11 +224,11 @@ public class SmokeTest extends BaseClass {
 	@Test(priority=5)
 	public void deletedprojects() throws InterruptedException{
 		
-		driver.findElement(By.xpath("(//button[@id='deleteProject'])[1]")).click();
+		driver.findElement(By.xpath("(//button[@id='deleteProject'])[6]")).click();
 		driver.findElement(By.xpath("//button[text()='Continue']")).click();
 		Thread.sleep(2000);
 		
-		WebElement deletemessage=driver.findElement(By.xpath("//div[text()='Project Test1 deleted successfully']"));
+		WebElement deletemessage=driver.findElement(By.xpath("//div[text()='Project Test8 deleted successfully']"));
 		
 		if(deletemessage.isDisplayed()) {
 			Assert.assertTrue(true);
@@ -240,8 +241,12 @@ public class SmokeTest extends BaseClass {
 		Thread.sleep(2000);
 		
 		driver.findElement(By.id("deletedProjectsTab")).click();
-		WebElement deletedproject=driver.findElement(By.xpath("//span[text()='Test1']"));
-		WebElement Restorebtn=driver.findElement(By.xpath("(//button[text()='Restore'])[1]"));
+		Thread.sleep(2000);
+		JavascriptExecutor jse= (JavascriptExecutor)driver;
+		jse.executeScript("window.scrollTo(0, document.body.scrollHeight)");
+		Thread.sleep(2000);
+		WebElement deletedproject=driver.findElement(By.xpath("//span[text()='Test8']"));
+		WebElement Restorebtn=driver.findElement(By.xpath("(//button[text()='Restore'])[33]"));
 		
 		if(deletedproject.isDisplayed() && Restorebtn.isDisplayed())
 		{
@@ -276,8 +281,8 @@ public class SmokeTest extends BaseClass {
 		driver.findElement(By.id("createGroupButton")).click();
 		Thread.sleep(3000);
 		WebElement groupname=driver.findElement(By.id("groupName"));
-		WebElement selectuser=driver.findElement(By.xpath("//button[text()='Select User']"));
-		WebElement grouprole=driver.findElement(By.xpath("//span[text()='Select Group Role']"));
+		WebElement selectuser=driver.findElement(By.name("selectUser"));
+		WebElement grouprole=driver.findElement(By.name("groupRole"));
 		WebElement savebtn=driver.findElement(By.xpath("//button[text()='Save']"));
 		if(groupname.isDisplayed() && selectuser.isDisplayed() && grouprole.isDisplayed() && savebtn.isDisplayed())
 		{
@@ -289,7 +294,7 @@ public class SmokeTest extends BaseClass {
 			logger.info("Create Group button doesn't contain all the required sections");
 		}
 		
-		groupname.sendKeys("Test1");
+		groupname.sendKeys("Test8");
 		selectuser.click();
 		driver.findElement(By.xpath("//div[text()='Admin']")).click();
 		Thread.sleep(2000);
@@ -305,7 +310,7 @@ public class SmokeTest extends BaseClass {
 //		driver.findElement(By.xpath("(//button)[15]"));
 		
 		WebElement groupcreated=driver.findElement(By.xpath("//div[text()='Group created successfully']"));
-		WebElement groupdisplay=driver.findElement(By.xpath("//span[text()='Test1']"));
+		WebElement groupdisplay=driver.findElement(By.xpath("//span[text()='Test8']"));
 		WebElement activetab=driver.findElement(By.id("activeTabb"));
 		WebElement blockedtab=driver.findElement(By.id("blockedTabb"));
 		WebElement deletedtab=driver.findElement(By.id("deletedTabb"));
@@ -385,7 +390,7 @@ public class SmokeTest extends BaseClass {
 		
 		Select obj = new Select(driver.findElement(By.xpath("(//select)[1]")));
 //		Select obj1=new Select(driver.findElement(By.xpath("//div[text()='Pick a color']")));
-		Layername.sendKeys("TestLayer24");
+		Layername.sendKeys("TestLayer12");
 //		geometrytype.click();
 		Thread.sleep(2000);
 		obj.selectByVisibleText("Polygon");
@@ -394,8 +399,8 @@ public class SmokeTest extends BaseClass {
 		colour.click();
 		Thread.sleep(2000); //sendKeys("#FF5733");
 //		obj1.selectByValue("#FF5733");
-		driver.findElement(By.xpath("(//div)[80]")).click();
-		driver.findElement(By.xpath("//div[text()='#FF5733']")).click();
+		driver.findElement(By.xpath("(//div)[89]")).click();
+		driver.findElement(By.xpath("//div[text()='#e84118']")).click();
 		layerdescription.sendKeys("Testing");
 		fieldName.sendKeys("Check");
 		fielddescription.sendKeys("Checking");
@@ -405,7 +410,7 @@ public class SmokeTest extends BaseClass {
 		
 //		driver.findElement(By.xpath("//span[text()='Close']")).click();
 		
-		WebElement newlayer=driver.findElement(By.xpath("//div[text()='Layer TestLayer24 created successfully']"));
+		WebElement newlayer=driver.findElement(By.xpath("//div[text()='Layer TestLayer12 created successfully']"));
 		WebElement createlayer=driver.findElement(By.id("createLayerButton"));
 		WebElement editlayer=driver.findElement(By.id("1layerEdit"));
 		WebElement deletelayer=driver.findElement(By.id("1deleteLayer"));
@@ -425,12 +430,12 @@ public class SmokeTest extends BaseClass {
 		}
 	}
 	
-	@Test(enabled=false)
+	@Test(priority=8)
 	public void projectsection() throws InterruptedException{
 		
 		driver.findElement(By.id("myProjects")).click();
 		Thread.sleep(2000);
-		driver.findElement(By.xpath("//p[text()='Hrishikesh Testing']")).click();
+		driver.findElement(By.xpath("//p[text()='Test1']")).click();
 		Thread.sleep(3000);
 		
 		WebElement Data=driver.findElement(By.xpath("//a[text()='Data']"));
@@ -470,15 +475,15 @@ public class SmokeTest extends BaseClass {
 		Thread.sleep(2500);
 		WebElement open=driver.findElement(By.xpath("//li[text()='Open']"));
 		WebElement details=driver.findElement(By.xpath("//li[text()='Details']"));
-		
-		if(open.isDisplayed() && details.isDisplayed())
+		WebElement deletepermanently=driver.findElement(By.xpath("//li[text()='Delete Permanently']"));
+		if(open.isDisplayed() && details.isDisplayed() && deletepermanently.isDisplayed())
 		{
 			Assert.assertTrue(true);
-			logger.info("All required fields are available in Actions button in ");
+			logger.info("All required fields are available in Actions button");
 		}
 		else {
 			Assert.assertTrue(false);
-			logger.info("All required sections are not available in Data in the Project");
+			logger.info("All required sections are not available in Actions button");
 		}
 		
 		driver.findElement(By.xpath("(//button[contains(@type,'button')])[2]")).click();
