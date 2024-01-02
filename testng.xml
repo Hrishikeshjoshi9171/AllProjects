@@ -15,6 +15,7 @@
       <class name="com.STM.TestCases.TC_DashboardPage"/>
       <class name="com.STM.TestCases.TC_ListView"/>
       <class name="com.STM.TestCases.TC_UserGroups"/>
+      <class name="com.STM.TestCases.TC_PublicLayers"/>
     </classes>
   </test> <!-- Test -->
   
@@ -29,6 +30,7 @@
       <class name="com.STM.TestCases.TC_DashboardPage"/>
       <class name="com.STM.TestCases.TC_ListView"/>
       <class name="com.STM.TestCases.TC_UserGroups"/>
+      <class name="com.STM.TestCases.TC_PublicLayers"/>
     </classes>
   </test>
 -->
